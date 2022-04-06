@@ -1,0 +1,206 @@
+Документација за лабораториската вежба
+
+4. git clone https://github.com/amatanasovska/SI_2022_lab1_206004 - клонирање на репозиториумот локално.
+
+Автентикација, конфигурирање соодветно на е-маил адреса и име:
+git config --global user.email "amatanasovska@yahoo.com"
+git config --global user.name "Ana Marija"
+
+5. git add shopping_list.txt - за додавање на фајлот  во staging  делот за да може да биде комитиран (од работниот директориум се
+додава фајлот во staging  делот)
+git commit -m "Add 5 items to the shopping list" - комитирање на фајлот 
+
+6. git add . - додавање на сите фајлови
+git commit -m "Add quantities to the items." - комитирање
+
+7. git checkout -b branch2 - креирање на гранки и префрлување соодветно
+
+8. Користена наредба - git log
+
+commit f48d7532f817b5d3a399d6c2e779a6db934e62eb (HEAD -> branch2, master, branch1)
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:16:59 2022 +0200
+
+    Add quantities to the items.
+
+commit 889f183d0826a4ad56c0760f8ad7f9c2458b9b7d
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:15:14 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 9cf6e32b4ee7d255a4edb79597f2c447ae8d8131 (origin/master, origin/HEAD)
+Author: amatanasovska <86167204+amatanasovska@users.noreply.github.com>
+Date:   Wed Apr 6 22:11:52 2022 +0200
+
+    Update README.md
+
+commit d2c1028ddd2630b94d4458f4bc4b5cec05bf40b1
+Author: amatanasovska <86167204+amatanasovska@users.noreply.github.com>
+Date:   Wed Apr 6 22:11:26 2022 +0200
+
+    Initial commit
+
+9. git push origin master - синхронизација со оддалечениот репозиториум на гранката master, со промена на master во branch1 и branch2 ќе ги
+синхронизираме и останатите гранки
+
+10. git checkout branch1 - менување на гранка branch1
+
+11. git commit -a -m "Change quantity of item #5" - Додавање и комитирање на shopping_list
+
+12. git checkout master - промена на гранката
+
+13. git commit -a -m "Change quantity of item #2" - Додавање и комитирање на shopping_list
+
+14. git push origin master - синхронизација со оддалечениот репозиториум на гранката master, со промена на master во branch1 и branch2 ќе ги
+синхронизираме и останатите гранки
+
+15. git checkout branch2 - промена на гранка
+
+16. git commit -a -m "Modify item #4" - Додавање и комитирање на shopping_list
+
+17. 
+
+branch2:
+commit f9074e27abc6ceaf77198c5b6206de06c92c3f7d (HEAD -> branch2)
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:29:18 2022 +0200
+
+    Modify item #4
+
+commit f48d7532f817b5d3a399d6c2e779a6db934e62eb (origin/branch2)
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:16:59 2022 +0200
+
+    Add quantities to the items.
+
+commit 889f183d0826a4ad56c0760f8ad7f9c2458b9b7d
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:15:14 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 9cf6e32b4ee7d255a4edb79597f2c447ae8d8131
+Author: amatanasovska <86167204+amatanasovska@users.noreply.github.com>
+Date:   Wed Apr 6 22:11:52 2022 +0200
+
+    Update README.md
+
+commit d2c1028ddd2630b94d4458f4bc4b5cec05bf40b1
+Author: amatanasovska <86167204+amatanasovska@users.noreply.github.com>
+Date:   Wed Apr 6 22:11:26 2022 +0200
+
+    Initial commit
+:
+
+
+branch1:
+commit d740c3496a30e1478be0ace9dd1d89f9f937ee76 (HEAD -> branch1, origin/branch1)
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:22:32 2022 +0200
+
+    Change quantity of item #5
+
+commit f48d7532f817b5d3a399d6c2e779a6db934e62eb (origin/branch2)
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:16:59 2022 +0200
+
+    Add quantities to the items.
+
+commit 889f183d0826a4ad56c0760f8ad7f9c2458b9b7d
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:15:14 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 9cf6e32b4ee7d255a4edb79597f2c447ae8d8131
+Author: amatanasovska <86167204+amatanasovska@users.noreply.github.com>
+Date:   Wed Apr 6 22:11:52 2022 +0200
+
+    Update README.md
+
+commit d2c1028ddd2630b94d4458f4bc4b5cec05bf40b1
+Author: amatanasovska <86167204+amatanasovska@users.noreply.github.com>
+Date:   Wed Apr 6 22:11:26 2022 +0200
+
+    Initial commit
+
+master:
+commit 218043c1eb23f3e3216577cf7dc12ad2b3f788a9 (HEAD -> master, origin/master, origin/HEAD)
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:25:12 2022 +0200
+
+    Change quantity of item #2
+
+commit f48d7532f817b5d3a399d6c2e779a6db934e62eb (origin/branch2)
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:16:59 2022 +0200
+
+    Add quantities to the items.
+
+commit 889f183d0826a4ad56c0760f8ad7f9c2458b9b7d
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:15:14 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 9cf6e32b4ee7d255a4edb79597f2c447ae8d8131
+Author: amatanasovska <86167204+amatanasovska@users.noreply.github.com>
+Date:   Wed Apr 6 22:11:52 2022 +0200
+
+    Update README.md
+
+commit d2c1028ddd2630b94d4458f4bc4b5cec05bf40b1
+Author: amatanasovska <86167204+amatanasovska@users.noreply.github.com>
+Date:   Wed Apr 6 22:11:26 2022 +0200
+
+    Initial commit
+
+За логовите користена наредба - git log
+
+18. git add .
+git commit --amend -> За проширување на commit-от
+
+19. 
+
+branch2:
+
+commit 14c470f57e565501af7bf334c01599e7742a7f56 (HEAD -> branch2)
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:29:18 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit f48d7532f817b5d3a399d6c2e779a6db934e62eb (origin/branch2)
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:16:59 2022 +0200
+
+    Add quantities to the items.
+
+commit 889f183d0826a4ad56c0760f8ad7f9c2458b9b7d
+Author: Ana Marija <amatanasovska@yahoo.com>
+Date:   Wed Apr 6 22:15:14 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 9cf6e32b4ee7d255a4edb79597f2c447ae8d8131
+Author: amatanasovska <86167204+amatanasovska@users.noreply.github.com>
+Date:   Wed Apr 6 22:11:52 2022 +0200
+
+    Update README.md
+
+commit d2c1028ddd2630b94d4458f4bc4b5cec05bf40b1
+Author: amatanasovska <86167204+amatanasovska@users.noreply.github.com>
+Date:   Wed Apr 6 22:11:26 2022 +0200
+
+    Initial commit
+:
+
+За другите гранки нема промена во логовите.
+
+20.git checkout master - промена на гранка , git merge branch1 - спојување
+
+21. git merge branch2 - за спојување на master и branch2, бидејќи имаше конфликт ја пуштив наредбата git merge --abort за откажување
+на спојувањето и потоа ја пуштив наредбата  git merge --strategy-option=theirs branch2 за да се разреши конфликтот со земање на решението на 
+branch2
+
